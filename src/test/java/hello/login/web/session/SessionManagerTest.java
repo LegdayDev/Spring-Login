@@ -36,5 +36,4 @@ class SessionManagerTest {
         Object expiredSession = sessionManager.getSession(request);
         assertThat(expiredSession).isNull();
     }
-
 }
