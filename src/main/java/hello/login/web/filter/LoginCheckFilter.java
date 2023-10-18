@@ -23,7 +23,7 @@ public class LoginCheckFilter implements Filter {
         String requestURI = httpRequest.getRequestURI();
 
         try{
-            log.info("인증 체크 필터 시작{}", requestURI);
+            log.info("인증 체크 필터 시작 {}", requestURI);
             // 체크 로직
             if(!isLoginCheckPath(requestURI)){
                 log.info("인증 체크 로직 실행 {}", requestURI);
